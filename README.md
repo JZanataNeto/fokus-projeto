@@ -1,3 +1,3 @@
 # Fokus-projeto
 > Objetivo: manipulação de elementos no DOM
-## Orientação: instrutores da Alura
+## Orientação: instrutores da Alura - Luan alves
