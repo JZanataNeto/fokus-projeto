@@ -73,6 +73,12 @@ function alterarContexto(contexto) {
 const contagemRegressiva = () => {
     if (tempoDecorridoEmSegundos <= 0) {
         musicaBeep.play();
+        const focoAtivo = html.getAttribute('data-contexto') == 'foco';
+        if (focoAtivo) {
+            const evento = new CustomEvent('focoFinalizado');
+            /*Broadcast*/
+            document.dispatchEvent(evento);
+        }
         zerar();
         return;
     }
